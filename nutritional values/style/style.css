@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 100vw;
+  height: 25vh;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.searchbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  margin-top: 0.5vh;
+  height: 8vh;
+}
+
+.searchbar #search-food {
+  width: 20em;
+  height: 1.5em;
+  margin-bottom: 0.5vh;
+}
+
+.searchbar #button {
+  width: 10em;
+  height: 1.5em;
+}
+
+.table {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid black;
+  height: 65vh;
+  width: 500px;
+  margin-top: 1vh;
+}
+
+@media screen and (max-width: 499px) {
+  .table {
+    width: 360px;
+  }
+}
+
+.table #food {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+  width: 70%;
+  font-size: 30px;
+}
+
+.table .nutrition-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 0.5vh;
+  height: 100%;
+  width: 100%;
+}
+
+.table .nutrition-table #ul1 {
+  width: 100%;
+  list-style: none;
+  padding-left: 0.5em;
+  text-align: left;
+}
+
+.table .nutrition-table #ul1 li {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.table .nutrition-table #ul1 #type-of-fats {
+  padding: 0.5em 0 0.5em 0.5em;
+  list-style: none;
+}
+
+.table .nutrition-table #ul1 #type-of-fats li {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.table .nutrition-table #ul2 {
+  width: 100%;
+  list-style: none;
+  padding-left: 0.5em;
+  border-left: 2px solid black;
+}
+
+.table .nutrition-table #ul2 li {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+}
+/*# sourceMappingURL=style.css.map */

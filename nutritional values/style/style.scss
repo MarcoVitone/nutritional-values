@@ -1,0 +1,117 @@
+@import "./media-queries";
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100vw;
+    height: 25vh;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 0.5vh;
+    height: 8vh;
+
+    #search-food{
+        width: 20em;
+        height: 1.5em;
+        margin-bottom: 0.5vh;
+    }
+
+    #button{
+        width: 10em;
+        height: 1.5em;
+    }
+}
+
+.table{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    border: 2px solid black;
+    height: 65vh;
+    width: 500px;
+    margin-top: 1vh;
+
+    @include w499px{
+        width: 360px;
+    }
+    
+    #food{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        border-bottom: 2px solid black;
+        width: 70%;
+        font-size: 30px;
+    }
+
+    .nutrition-table{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        flex-direction: row;
+        margin-top: 0.5vh;
+        height: 100%;
+        width: 100%;
+    
+        #ul1{
+            width: 100%;
+            list-style: none;
+            padding-left: 0.5em;
+            text-align: left;
+
+            li{
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 25px;
+            }
+
+            #type-of-fats{
+                padding: 0.5em 0 0.5em 0.5em ;
+                list-style: none;
+                
+                li{
+                    font-size: 15px;
+                    font-weight: bold;
+                    line-height: 28px;
+                }
+            }
+        }
+        
+        #ul2{
+            width: 100%;
+            list-style: none;
+            padding-left: 0.5em;
+            border-left: 2px solid black;
+
+            li{
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 25px;
+            }
+        }
+    }
+}
